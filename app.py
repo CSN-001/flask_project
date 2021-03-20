@@ -13,7 +13,7 @@ opWrapper.start()
 datum = op.Datum()
 imageToProcess = cv2.imread("img.jpg")
 # cv2.imshow("qq", imageToProcess)
-imageToProcess = cv2.cvtColor(imageToProcess, cv2.COLOR_RGB2BGR)
+# imageToProcess = cv2.cvtColor(imageToProcess, cv2.COLOR_RGB2BGR)
 
 datum.cvInputData = imageToProcess
 opWrapper.emplaceAndPop(op.VectorDatum([datum]))
